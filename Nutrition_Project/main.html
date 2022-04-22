@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WELCOME</title>
+    <link rel="stylesheet" href="home.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Almendra SC' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Averia Sans Libre' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+
+
+<body>
+<!--Navbar Section-->
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">nutri<span>Talk</span></a></div>
+            <ul class="menu">
+                <li> <a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#nutrition" class="menu-btn">BMI</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!--Home Section-->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-box">
+                    <h1>Body. Mind. Soul</h1>
+                    <p>Take a moment to care for your Health. Self-care isn't Selfish..</p>
+                </div>
+                <div class="text-1">Check how much you know<br>about Nutrition</div>
+                <div class="game"> <a href="#" onclick="document.location='quizindex.html'">Play Quiz</a></div>
+                <div class="text-3">Here's a Quick test to<br><span class="typing"> Know about Your Health</span></div>
+                <a href="#nutrition">Calculate BMI</a>
+                <div class="text-2">Keep Track of your<br>Calorie intake</div>
+                <div class="tracker"> <a href="#" onclick="document.location='index.html'">Track Calories</a></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Nutrition Section-->
+    <section class="nutrition" id="nutrition">  
+        <div class="nutrition-content">
+            <div>
+                <h2>BMI Calculator</h2>
+                <p class="text">Height</p>
+                <input type="text" id="h">
+                <p class="text">Weight</p>
+                <input type="text" id="w">
+                <p id="result"></p>
+                <button id="btn" onClick="BMI()">Calculate</button>
+                <p id="info">Please enter height [cm] and weight [kg]</p>
+            </div>
+            <h3>If you are obese you have a high chance of risk of diabetes <br> Check out diabetes prediction for you</h3>
+            <a id="bmiinfo" href="https://swaralipathak23.pythonanywhere.com/">Prediction</a>
+        </div>
+    </section>
+
+    <!--About Section start-->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About Nutrition</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/about.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">NUTRITION : <span class="typing-2">Why is it important?</span></div>
+                    <p>People look at food labels for a variety of reasons. But whatever the reason, many consumers would like to know how to use this information more effectively and easily.<br> Click the button below to know some nutritional facts.</p>
+                    <a id='info' href="https://www.healthline.com/nutrition/top-10-nutrition-facts#TOC_TITLE_HDR_1">Information</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact section start-->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in touch</div>
+                    <p>Contact us to know Some useful nutritional Benefits and some Wonderful Healthy Diet Tips</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user">   </i>
+                            <div class="info">
+                                <div class="head">Name </div>
+                                <div class="sub-title">Swarali</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt">   </i>
+                            <div class="info">
+                                <div class="head">Address </div>
+                                <div class="sub-title"> India</div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <i class="fas fa-envelope">   </i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">swara23@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form method="POST" action="mail_handler.php" name="form">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" name="name" placeholder="Enter Your Name" required>
+
+                            </div>
+                            <div class="field email">
+                                <input type="email" name="email" placeholder="Enter Your Email" required>
+
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="phone" placeholder="Enter Your Phone No." 10 digit no .required>
+
+                        </div>
+
+                        <div class="field textarea">
+                            <textarea cols="" id="" cols="30" rows="10" name="msg" placeholder="Describe project.." required></textarea>
+                            <div class="button">
+                                <button type="submit" name="submit">Send message</button>
+                            </div>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--footer section start-->
+    <footer>
+        <span>Created By<a href="#">Creations@2021</a> |<span class="far fa-copyright"></span>2021 All rights reserved. </span>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+<!-- style and js code for bmi calculator-->
+<style>
+    .nutrition-content{
+        align-items: center;
+        margin-left: 20%;
+        margin-top: 5%;
+    }
+    .text{
+        text-align: left;
+        margin-left: 150px;
+    }
+    #w, #h{
+        color: #ececec;
+        font-size: 25px;
+        font-weight: 250;
+        outline: none;
+        border: none;
+        background: none;
+        border-bottom: 1px solid #ad9eee;
+        width: 200px;
+    }
+        #w:focus, #h:focus{
+            border-bottom: 2px solid #341f97;
+            width: 300px;
+            transition: 0.5s;
+        }
+        #result{
+            color: #5bdfd4;
+            font-size: 25px;
+            font-weight: 250;
+            font-family: inherit;
+            padding-top: 3px;
+        }
+        #btn{
+            font-family: inherit;
+            margin-top: 10px;
+            font-size: 20px;
+            border: none;
+            color: #fff;
+            background-image: linear-gradient(120deg,#ff6b6b, #5f27cd);
+            width: 150px;
+            padding: 10px;
+            border-radius: 30px;
+            outline: none;
+            cursor: pointer;
+        }
+        #btn:hover{
+            box-shadow: 1px 1px 10px #341f97;
+        }
+        #info{
+            font-size: 16px;
+            padding-top: 12px;
+            font-family: inherit;
+        }
+        
+        #bmiinfo{
+            font-family: inherit;
+            margin-top: 250px;
+            font-size: 25px;
+            border: none;
+            color: rgb(0, 0, 0);
+            background: #a383e4;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        #bmiinfo:hover{
+            box-shadow: 1px 1px 10px #000000;
+            color: rgb(0, 0, 0);
+            background:#6edfd5;
+            opacity: 0.9;
+        }
+
+</style>
+<script type="text/javascript">
+    function BMI() {
+        var h=document.getElementById('h').value;
+        var w=document.getElementById('w').value;
+        var bmi=w/(h/100*h/100);
+        var bmio=(bmi.toFixed(2));
+
+        if(bmio<=18){
+            document.getElementById("result").innerHTML=("Your BMI is " + bmio +" \nYou are UNDERWEIGHT...You need to Improve your Diet.");
+        }
+        else if(bmio>18.1 && bmio<=24.9){
+            document.getElementById("result").innerHTML=("Your BMI is " + bmio +"\nYou are Healthy!! Your BMI is Normal.");
+        }
+        else if(bmio>=25 && bmio<=29.9){
+            document.getElementById("result").innerHTML=("Your BMI is " + bmio +"\nYou are Overweight. You need to reduce your weight");
+        }
+        else {
+            document.getElementById("result").innerHTML=("Your BMI is " + bmio +" \nYou are OBESE!! Please consult your doctor.")
+        }
+    }
+</script>
+
+</html>

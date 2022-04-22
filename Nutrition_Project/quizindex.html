@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizland</title>
+    <link rel="stylesheet" href="quizstyle.css">
+
+</head>
+
+<body>
+    <div class="main-div">
+        <button id="hme" onclick="document.location='main.html'">Home</button>
+        
+        <div class="inner-div">
+            <h2 class="question">Question comes here</h2> <!--question of the quiz-->
+            <!--creating answer options-->
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="a1" class="answer">
+                    <label for="a1" id="option1"> Answer Option</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="a2" class="answer">
+                    <label for="a2" id="option2"> Answer Option</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="a3" class="answer">
+                    <label for="a3" id="option3"> Answer Option</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="a4" class="answer">
+                    <label for="a4" id="option4">Answer Option</label>
+                </li>
+            </ul>
+
+            <button id="submit">Submit</button>
+            <!--to show score at the last-->
+            <div id="showScore" class="scoreArea"> </div>
+        </div>
+        
+    </div>
+
+    <script src="quiz.js"></script>
+
+</body>
+</html>
